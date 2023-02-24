@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- ------------------------------------------------------ -->
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- ------------------------------------------------------ -->
+    <link rel="stylesheet" href="css/index.css">
+    
+    <!-- -----------------------------------------------------  -->
+    <!-- cart -->
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- javascript -->
+    <script type="javascript" src="js/payment.js"></script>
+    <!-- cart -->
+    <!-- ---------------------------------------------------------  -->
+  
+ </head>   
+<body>
+<div class="main">
+  <!-- navigation -->
+  <div class="navigation">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">SHOPEE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="products.html">Products</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Categories
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="mensclothing.html">Men's Clothing</a>
+            <a class="dropdown-item" href="womensclothing.html">Women's Clothing</a>
+            <a class="dropdown-item" href="jewelery.html">Jewelery</a>
+            <a class="dropdown-item" href="electronics.html">Electronics</a>
+          </div>
+        </li>
+        
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <div class="navbar-nav ms-auto">
+        <div class="dropdown">
+          <a class="btn  dropdown-toggle"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Account
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="login.html">Login</a>
+            <a class="dropdown-item" href="register.html">Register</a>
+          </div>
+        </div>
+        <a href="cart.html" ><img src="images/cart.png" alt="" id="cart-icon"></a>
+        <!-- <i class='bx bxs-cart-alt' style='color:#ffffff'  ></i> -->
+        
+    </div>
+    </div>
+  </nav>
+  </div>
+  <!-- navigation end -->
+<div class="container mt-5"> 
+    <div class="row pt-5">
+        <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 mt-3"> 
+           <div id="accordion">
+              <div class="card">
+                  <div class="card-header">
+                    <div class="row pt-3">
+                      <div class="col-2 text-center">
+                        <span style="padding:2% 8%;border:1px solid transparent;background-color: rgb(247, 138, 138);">1</span>
+                      </div>
+                      <div class="col-6">
+                        <span style="font-size:15px;font-weight:600;color:rgb(124, 123, 123);text-transform: uppercase;">delivery address</span>
+                        <p>user address</p>
+                      </div>
+                      <div class="col-4 pl-0">
+                        <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseOne" id="button-hidder" style='text-transform: uppercase;'>Change</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="collapseOne" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      <div class="row pl-3 ">
+                        <div class="col-6 ">
+                          <input type="radio" class="hide-for-front" name="address" checked>&nbsp;&nbsp;&nbsp;&nbsp;<span style="text-transform:uppercase;font-size:15px;">username</span>
+                        </div>
+                        <div class="col-6 text-right pr-5">
+                          <a href="#/" class="edit hide-for-front" style="text-transform: uppercase;">edit</a>
+                        </div>
+                      </div>
+                      <div class="row pl-5 pb-3 hide-for-front"> 
+                        <div class="col">
+                          <span style="text-transform: uppercase;"></span>user address</span>
+                        </div>
+                      </div>
+                      <div class="row pl-5 hide-for-front">
+                        <div class="col">
+                          <p><button style="text-transform: uppercase;padding:2% 5%;background-color: tomato;color:white;border-color:transparent" data-toggle="collapse" data-target="#collapseOne,#collapseTwo" id="button-hidder-1">delivery here</button></p>
+                        </div>
+                      </div>
+                      <div class="container show-for-front">
+                        <div class="row pl-3 ">
+                          <input type="radio" checked>&nbsp;&nbsp;&nbsp;&nbsp;<span style="text-transform:uppercase;font-size:15px;">EDIT ADDRESS</span>
+                        </div>
+                        <div class="row pl-5 pt-3 pb-3 ">
+                          <button class="btn-primary text-white pl-4 pr-4 pt-2 pb-2" style="border-radius:10px;">Use my current location</button>
+                        </div>
+                        <div class="row pb-3">
+                          <div class="col-6 text-right pr-0">
+                            <input type="text" placeholder="NAME" style="width:90%;height:50px;" class="pl-3">
+                          </div>
+                          <div class="col-6">
+                            <input type="text" placeholder="10-digit mobile number" style="width:90%;height:50px;" class="pl-3">
+                          </div>
+                        </div>
+                        <div class="row pr-0 pb-3">
+                          <div class="col-6 text-right pr-0">
+                            <input type="text" placeholder="Pincode" style="width:90%;height:50px;" class="pl-3">
+                          </div>
+                          <div class="col-6">
+                            <input type="text" placeholder="Locality" style="width:90%;height:50px;" class="pl-3">
+                          </div>
+                        </div>
+                        <div class="row pb-3" style="padding-left:4.7%">
+                          <div class="col">
+                            <input type="text" placeholder="Address (Area and  Street)" style="width:95%;height:50px;" class="pl-3">
+                          </div>
+                        </div>
+                        <div class="row pb-3">
+                          <div class="col-6 text-right pr-0">
+                            <input type="text" placeholder="City/District/Town" style="width:90%;height:50px;" class="pl-3">
+                          </div>
+                          <div class="col-6">
+                            <input type="text" placeholder="State" style="width:90%;height:50px;" class="pl-3">
+                          </div>
+                        </div>
+                        <div class="row pr-0 pb-3">
+                          <div class="col-6 text-right pr-0">
+                            <input type="text" placeholder="Landmark (optional)" style="width:90%;height:50px;" class="pl-3">
+                          </div>
+                          <div class="col-6">
+                            <input type="text" placeholder="Alternate Phone (Optional)" style="width:90%;height:50px;" class="pl-3">
+                          </div>
+                        </div>
+                        <div class="row pl-5">
+                          <button class="btn-primary text-white pl-4 pr-4 pt-2 pb-2" style="border-radius:10px;text-transform: uppercase;font-weight: 600;">save and deliver here</button>
+                          &nbsp;&nbsp;&nbsp;<span class="pt-2 call-back"><a href="#/" style="text-transform: uppercase;">cancle</a></span>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <div class="row pt-3 pb-3">
+                    <div class="col-2 text-center">
+                      <span style="padding:2% 8%;border:1px solid transparent;background-color: rgb(247, 138, 138);">2</span>
+                    </div>
+                    <div class="col-10">
+                      <span style="font-size:15px;font-weight:600;color:grey;text-transform: uppercase;">Order Summary</span>
+                    </div>
+                  </div>
+                </div>
+                <div id="collapseTwo" class="collapse" >
+                  <div class="card-body">
+                    <div class="row pb-3 ">
+                      <div class="col-xl-4 col-lg-2 col-md-3 col-sm-3 col-12 pt-5 text-center">
+                        <img src="images/buy-2.jpg" height="200px">
+                      <div class="text-left">
+                          <select name="Qunatity" class="custom-select mt-2 first">
+                            <option selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-xl-8 col-lg-10 col-md-8 col-sm-8 col-12 pt-5">
+                        <p>Item Name:&nbsp;shooes</p>
+                        <p>Seller:&nbsp;Likhitha</p>
+                        <p>Price:&nbsp;&#8377;390</p>
+                        <p><a href="#/" style="font-weight:700">REMOVE</a></p>
+                      </div>
+                    </div>
+                    <div class="row pb-3">
+                      <div class="col-xl-4  col-lg-2 col-md-3 col-sm-4 col-12 pt-5 text-center">
+                        <img src="images/buy-1.jpg" height="200px">
+                        <div class="text-left">
+                        <select name="Qunatity" class="custom-select mt-2 second">
+                          <option selected>1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select>
+                      </div>
+                      </div>
+                      <div class="col-xl-8 col-lg-10 col-md-8 col-sm-8 col-12 pt-5 pt-5">
+                        <p>Item Name:&nbsp; T-shirt</p>
+                        <p>Size:&nbsp;XL</p>
+                        <p>Seller:&nbsp;Chaitanya</p>
+                        <p>Price:&nbsp;&#8377;490</p>
+                        <p><a href="#/"  style="font-weight:700">REMOVE</a></p>
+                      </div>
+                    </div>
+                    <div class="row pb-3">
+                      <div class="col-xl-4 col-lg-2 col-md-3 col-sm-3 col-12 pt-5 pl-5 text-center">
+                        <img src="images/buy-3.jpg" height="200px">
+                        <select name="Qunatity" class="custom-select mt-2 third text-center">
+                          <option selected>1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select>
+                      
+                      </div>
+                      <div class="col-xl-8  col-lg-9 col-md-8 col-sm-8 col-8 pt-5 pt-5 pt-5">
+                        <p>Item Name:&nbsp;Track pant</p>
+                        <p>Seller:&nbsp;Satya</p>
+                        <p>Price:&nbsp;&#8377;580</p>
+                        <p><a href="#/"  style="font-weight:700">REMOVE</a></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col pr-5 text-right">
+                        <p><button style="text-transform: uppercase;padding:2% 5%;background-color: tomato;color:white;border-color:transparent" data-toggle="collapse" data-target="#collapseTwo,#payment-option">continue</button></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="card">
+             
+               
+               
+             
+              
+             
+              </div> 
+          </div>
+          </div>  
+        </div>
+        <!-- <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 mt-3 pt-4">
+          <div class="container">
+            <div class="card">
+              <div class="card-header">PRICE DETAILS</div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col text-left">
+                    Price(3) :
+                  </div>
+                  <div class="col text-right">
+                    &#8377;1,460
+                  </div>
+                </div>
+                  <div class="row pt-3">
+                    <div class="col-7 text-left ">
+                      Delivery Charges :
+                    </div>
+                    <div class="col text-right">
+                      Free
+                    </div>
+                  </div>
+                <hr>
+                <div class="row">
+                  <div class="col text-left">
+                    Total Amount :
+                  </div>
+                  <div class="col text-right">
+                    &#8377;1,460
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div> -->
+    </div>
+
+</div>
+<!------footer-->
+<div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>Download App for android and ios mobile phone.</p>
+          <div class="app-logo">
+            <img src="images/play-store.png" alt="">
+            <img src="images/app-store.png" alt="">
+          </div>
+        </div>
+  
+        <div class="footer-col-2">
+          <img src="images/name_logo.png" alt="">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+  
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+          </ul>
+        </div>
+  
+        <div class="footer-col-4">
+          <h3>Follow us</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>YouTube</li>
+          </ul>
+        </div>
+      </div>
+  
+      <hr>
+      <p class="copyright">Copyright 2023 - Likhitha Chaitanya </p>
+    </div>
+  </div>
+  
+  
+  <!-- ---------------------------------------------------------------  -->
+  
+  
+  </body>
+  </html>
